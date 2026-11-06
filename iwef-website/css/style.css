@@ -461,9 +461,10 @@ ul {
     position: relative;
     height: 100vh;
     min-height: 720px;
-    background: radial-gradient(circle at 80% 20%, rgba(38, 198, 218, 0.22) 0%, transparent 50%),
-                radial-gradient(circle at 20% 80%, rgba(15, 76, 92, 0.4) 0%, transparent 60%),
-                linear-gradient(135deg, #071f25 0%, #0c3e4a 50%, #153844 100%);
+    background-image: url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     overflow: visible; /* Allow cards to visually overlap without clipping */
@@ -475,7 +476,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--gradient-hero);
+    background: linear-gradient(135deg, rgba(7, 31, 37, 0.75) 0%, rgba(12, 62, 74, 0.6) 100%);
     z-index: 1;
 }
 
@@ -1646,9 +1647,10 @@ ul {
     position: relative;
     height: 100vh;
     min-height: 720px;
-    background: radial-gradient(circle at 80% 20%, rgba(38, 198, 218, 0.22) 0%, transparent 50%),
-                radial-gradient(circle at 20% 80%, rgba(15, 76, 92, 0.4) 0%, transparent 60%),
-                linear-gradient(135deg, #071f25 0%, #0c3e4a 50%, #153844 100%);
+    background-image: url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -1850,19 +1852,41 @@ ul {
 
 /* INTEGRATED SOLUTIONS SECTION */
 .integrated-solutions {
-    background-color: var(--color-secondary);
+    background: linear-gradient(160deg, #071f25 0%, #0c3e4a 50%, #0f4c5c 100%);
     padding: 100px 0;
+    position: relative;
+}
+
+.integrated-solutions::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 30%, rgba(38, 198, 218, 0.12) 0%, transparent 60%);
+    pointer-events: none;
 }
 
 .solutions-header {
     text-align: center;
     margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.solutions-header .section-label {
+    color: var(--color-primary);
+}
+
+.solutions-header .section-title {
+    color: #ffffff;
 }
 
 .solutions-desc {
     max-width: 600px;
     margin: 16px auto 0;
     opacity: 0.9;
+    color: rgba(255, 255, 255, 0.88);
+    position: relative;
+    z-index: 1;
 }
 
 .solutions-grid {
@@ -2041,24 +2065,26 @@ ul {
     position: relative;
     padding-top: calc(var(--header-height) + 50px);
     padding-bottom: 70px;
-    background: var(--gradient-hero);
+    background-image: url('../assets/images/page-header-bg.jpg');
     background-size: cover;
     background-position: center;
     color: var(--color-white);
     overflow: hidden;
 }
 
+/* Dark teal overlay matching the hero section style */
 .page-header::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(rgba(38, 198, 218, 0.15) 1px, transparent 1px);
-    background-size: 24px 24px;
-    opacity: 0.6;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(7, 31, 37, 0.80) 0%,
+        rgba(12, 62, 74, 0.72) 50%,
+        rgba(15, 76, 92, 0.68) 100%
+    );
     pointer-events: none;
+    z-index: 1;
 }
 
 .page-header-container {

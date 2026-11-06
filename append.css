@@ -7,7 +7,7 @@
     position: relative;
     height: 100vh;
     min-height: 720px;
-    background-image: url('../assets/images/hero-bg.png');
+    background-image: url('../assets/images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
