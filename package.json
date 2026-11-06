@@ -1,0 +1,8 @@
+{
+  "name": "iweref-website",
+  "version": "1.0.0",
+  "description": "Integrated Water and Environment Resource Foundation website",
+  "scripts": {
+    "dev": "node server.js"
+  }
+}

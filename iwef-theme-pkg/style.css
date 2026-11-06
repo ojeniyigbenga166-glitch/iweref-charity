@@ -1,0 +1,17 @@
+/*
+Theme Name:        IWEREF Environmental Theme
+Theme URI:         https://iweref.org
+Author:            IWEREF Design Team
+Author URI:        https://iweref.org
+Description:       Premium environmental NGO WordPress theme for the Integrated Water and Environment Resource Foundation. Features modern green design, Elementor compatible, full-width homepage template with animated sections.
+Version:           1.0.0
+Requires at least: 5.8
+Tested up to:      6.5
+Requires PHP:      7.4
+License:           GPL-2.0-or-later
+License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:       iweref
+Tags:              environmental, ngo, charity, green, one-page, elementor, full-width-template, portfolio
+*/
+
+/* Theme base — full design lives in assets/css/main.css, enqueued via functions.php */
