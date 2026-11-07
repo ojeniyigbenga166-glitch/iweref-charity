@@ -5,9 +5,9 @@
  * @package iweref
  */
 
-$contact_address = get_theme_mod( 'iweref_contact_address', '72 Eco-Conservation Boulevard, Suite 300, Capital City' );
-$contact_email   = get_theme_mod( 'iweref_contact_email',   'contact@iweref.org' );
-$contact_phone   = get_theme_mod( 'iweref_contact_phone',   '+1 (800) 456-7890' );
+$contact_address = get_theme_mod( 'iweref_contact_address', 'Plot 2, Peniel Plaza, Block C Olusegun Obasanjo Way, Ilesha Road Akure, Ondo State, Nigeria' );
+$contact_email   = get_theme_mod( 'iweref_contact_email',   'info@iweref.org' );
+$contact_phone   = get_theme_mod( 'iweref_contact_phone',   '+234 903 239 0394, +234 803 714 54' );
 ?>
 
 <section class="contact-section" id="contact">
