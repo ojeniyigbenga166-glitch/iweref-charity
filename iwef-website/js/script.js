@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initFaqAccordion();
     initDonationSelector();
     initBackToTop();
+    initContactForm();
 });
 
 /**
@@ -392,5 +393,64 @@ function initBackToTop() {
 
     btn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+/**
+ * 11. Web3Forms AJAX Contact Form Handler
+ * Submits form data asynchronously to Web3Forms and routes directly to Gmail
+ */
+function initContactForm() {
+    const contactForm = document.getElementById('contact-form');
+    if (!contactForm) return;
+
+    contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn ? submitBtn.innerHTML : 'Send Message';
+
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending Message...';
+        }
+
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+
+            if (data.success) {
+                if (submitBtn) {
+                    submitBtn.innerHTML = '✓ Message Sent Successfully!';
+                    submitBtn.style.backgroundColor = '#10B981';
+                    submitBtn.style.borderColor = '#10B981';
+                }
+                contactForm.reset();
+                setTimeout(() => {
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.style.backgroundColor = '';
+                        submitBtn.style.borderColor = '';
+                    }
+                }, 4000);
+            } else {
+                alert(data.message || 'Submission failed. Please check your Web3Forms Access Key.');
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                }
+            }
+        } catch (err) {
+            alert('A network error occurred. Please try again.');
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
+            }
+        }
     });
 }

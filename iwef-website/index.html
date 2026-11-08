@@ -562,7 +562,13 @@
 
                 <!-- Contact form -->
                 <div class="contact-form-wrapper scroll-reveal fade-left">
-                    <form class="contact-form" id="contact-form">
+                    <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key for ojeniyigbenga166@gmail.com -->
+                        <input type="hidden" name="access_key" id="web3forms-access-key-home" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="from_name" value="IWEREF Landing Page Form">
+                        <input type="hidden" name="subject" value="New Inquiry from IWEREF Landing Page">
+                        <input type="checkbox" name="botcheck" style="display: none;">
+
                         <div class="form-grid">
                             <div class="form-group">
                                 <label for="name">Full Name</label>

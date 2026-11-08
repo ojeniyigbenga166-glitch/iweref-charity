@@ -126,7 +126,13 @@
                     <h3 style="font-family: var(--font-heading); font-size: 22px; margin-bottom: 8px;">Send Us a Message</h3>
                     <p style="color: var(--color-text-light); font-size: 14px; margin-bottom: 24px;">Fill out the form below and our team will get in touch shortly.</p>
                     
-                    <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out to IWEREF! We will respond within 24 hours.');">
+                    <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key for ojeniyigbenga166@gmail.com -->
+                        <input type="hidden" name="access_key" id="web3forms-access-key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="from_name" value="IWEREF Website Contact Form">
+                        <input type="hidden" name="subject" value="New Contact Inquiry - IWEREF">
+                        <input type="checkbox" name="botcheck" style="display: none;">
+
                         <div class="form-grid">
                             <div class="form-group">
                                 <label for="name">Full Name *</label>
