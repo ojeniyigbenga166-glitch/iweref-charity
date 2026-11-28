@@ -1,5 +1,13 @@
 {
   "outputDirectory": "iwef-website",
-  "cleanUrls": true
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/programs", "destination": "/programs.html" },
+    { "source": "/projects", "destination": "/projects.html" },
+    { "source": "/stories", "destination": "/stories.html" },
+    { "source": "/team", "destination": "/team.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/donate", "destination": "/donate.html" }
+  ]
 }
 
