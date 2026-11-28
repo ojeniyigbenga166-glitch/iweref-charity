@@ -31,7 +31,15 @@
             <nav class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link active">About Us</a></li>
+                    <li class="nav-item nav-dropdown">
+                        <a href="about.html" class="nav-link nav-dropdown-toggle active" aria-expanded="false">Explore <span class="nav-chevron" aria-hidden="true">&#9662;</span></a>
+                        <ul class="nav-submenu">
+                            <li><a href="about.html" class="nav-submenu-link">About Us</a></li>
+                            <li><a href="team.html" class="nav-submenu-link">Team</a></li>
+                            <li><a href="donate.html#volunteer" class="nav-submenu-link">Volunteer</a></li>
+                            <li><a href="stories.html" class="nav-submenu-link">Events</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
                     <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="stories.html" class="nav-link">Stories</a></li>
@@ -85,8 +93,39 @@
             </div>
         </section>
 
+        <!-- OUR MISSION & VISION SECTION -->
+        <section class="page-section-alt" id="mission-vision">
+            <div class="container">
+                <div class="section-header center scroll-reveal fade-up">
+                    <span class="section-label">OUR MISSION &amp; VISION</span>
+                    <h2 class="section-title">What We Stand For</h2>
+                    <p class="section-desc">Two pillars that define every decision, every program, and every partnership we undertake.</p>
+                </div>
+
+                <div class="grid grid-2" style="gap: 30px; margin-top: 40px;">
+                    <!-- Mission Card -->
+                    <div class="scroll-reveal fade-up" style="--delay: 100ms; background: var(--color-white); border-radius: var(--border-radius-md); padding: 40px 36px; box-shadow: var(--shadow-sm); border: 1px solid rgba(38, 198, 218, 0.18); border-top: 4px solid var(--color-primary);">
+                        <div style="width: 52px; height: 52px; background: linear-gradient(135deg, #26C6DA22, #0f4c5c22); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3 style="font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: var(--color-text-dark); margin-bottom: 14px;">Our Mission</h3>
+                        <p style="font-size: 16px; color: var(--color-text-light); line-height: 1.75;">To empower underserved communities through sustainable access to quality education, transformative healthcare, and economic opportunity — fostering a world where every individual can reach their full potential.</p>
+                    </div>
+
+                    <!-- Vision Card -->
+                    <div class="scroll-reveal fade-up" style="--delay: 200ms; background: var(--color-white); border-radius: var(--border-radius-md); padding: 40px 36px; box-shadow: var(--shadow-sm); border: 1px solid rgba(38, 198, 218, 0.18); border-top: 4px solid #F4C430;">
+                        <div style="width: 52px; height: 52px; background: linear-gradient(135deg, #F4C43022, #0f4c5c22); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F4C430" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                        </div>
+                        <h3 style="font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: var(--color-text-dark); margin-bottom: 14px;">Our Vision</h3>
+                        <p style="font-size: 16px; color: var(--color-text-light); line-height: 1.75;">A global landscape where social equity is the standard, and communities are self-reliant, resilient, and thriving in health and knowledge — no one left behind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- VALUES SECTION -->
-        <section class="page-section-alt" id="values">
+        <section class="page-section" id="values">
             <div class="container">
                 <div class="section-header center scroll-reveal fade-up">
                     <span class="section-label">OUR VALUES</span>
@@ -144,78 +183,6 @@
             </div>
         </section>
 
-        <!-- LEADERSHIP & TEAM SECTION -->
-        <section class="page-section" id="team">
-            <div class="container">
-                <div class="section-header center scroll-reveal fade-up">
-                    <span class="section-label">GOVERNANCE &amp; LEADERSHIP</span>
-                    <h2 class="section-title">Leadership & Advisory Board</h2>
-                    <p class="section-desc">IWEREF is guided by a Governing Council responsible for strategic direction, accountability, and organizational oversight — ensuring transparency and effectiveness in all programs.</p>
-                </div>
-
-                <div class="team-grid">
-                    <div class="team-card scroll-reveal fade-up" style="--delay: 100ms;">
-                        <div class="team-avatar">TA</div>
-                        <h3 class="team-name">Dr. Tomi Adeleke</h3>
-                        <span class="team-role">Founder & Executive Director</span>
-                        <p class="team-bio">Environmental scientist with 18+ years leading watershed restoration projects across Africa and Asia.</p>
-                    </div>
-
-                    <div class="team-card scroll-reveal fade-up" style="--delay: 200ms;">
-                        <div class="team-avatar">ER</div>
-                        <h3 class="team-name">Eng. Elena Rostova</h3>
-                        <span class="team-role">Chief Hydrological Engineer</span>
-                        <p class="team-bio">Specialist in solar borehole designs, clean water filtration technologies, and renewable off-grid infrastructure.</p>
-                    </div>
-
-                    <div class="team-card scroll-reveal fade-up" style="--delay: 300ms;">
-                        <div class="team-avatar">MV</div>
-                        <h3 class="team-name">Marcus Vance</h3>
-                        <span class="team-role">Conservation Director</span>
-                        <p class="team-bio">Leading native tree planting programs, soil recovery, and ecological corridor restorations with local farmers.</p>
-                    </div>
-
-                    <div class="team-card scroll-reveal fade-up" style="--delay: 400ms;">
-                        <div class="team-avatar">SA</div>
-                        <h3 class="team-name">Sarah Al-Mansoor</h3>
-                        <span class="team-role">Community Outreach Lead</span>
-                        <p class="team-bio">Coordinates volunteer programs, school ecological workshops, and local water governance committees.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- GRASSROOTS FIELD ACTION GALLERY -->
-        <section class="page-section-alt" id="field-action">
-            <div class="container">
-                <div class="section-header center scroll-reveal fade-up">
-                    <span class="section-label">OUR MISSION &amp; VISION</span>
-                    <h2 class="section-title">What We Stand For</h2>
-                    <p class="section-desc">Two pillars that define every decision, every program, and every partnership we undertake.</p>
-                </div>
-
-                <div class="grid grid-2" style="gap: 30px; margin-top: 40px;">
-                    <!-- Mission Card -->
-                    <div class="scroll-reveal fade-up" style="--delay: 100ms; background: var(--color-white); border-radius: var(--border-radius-md); padding: 40px 36px; box-shadow: var(--shadow-sm); border: 1px solid rgba(38, 198, 218, 0.18); border-top: 4px solid var(--color-primary);">
-                        <div style="width: 52px; height: 52px; background: linear-gradient(135deg, #26C6DA22, #0f4c5c22); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-                        </div>
-                        <h3 style="font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: var(--color-text-dark); margin-bottom: 14px;">Our Mission</h3>
-                        <p style="font-size: 16px; color: var(--color-text-light); line-height: 1.75;">To empower underserved communities through sustainable access to quality education, transformative healthcare, and economic opportunity — fostering a world where every individual can reach their full potential.</p>
-                    </div>
-
-                    <!-- Vision Card -->
-                    <div class="scroll-reveal fade-up" style="--delay: 200ms; background: var(--color-white); border-radius: var(--border-radius-md); padding: 40px 36px; box-shadow: var(--shadow-sm); border: 1px solid rgba(38, 198, 218, 0.18); border-top: 4px solid #F4C430;">
-                        <div style="width: 52px; height: 52px; background: linear-gradient(135deg, #F4C43022, #0f4c5c22); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F4C430" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-                        </div>
-                        <h3 style="font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: var(--color-text-dark); margin-bottom: 14px;">Our Vision</h3>
-                        <p style="font-size: 16px; color: var(--color-text-light); line-height: 1.75;">A global landscape where social equity is the standard, and communities are self-reliant, resilient, and thriving in health and knowledge — no one left behind.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- CTA BANNER -->
         <section class="green-cta-section">
             <div class="cta-overlay-pattern"></div>
@@ -255,7 +222,7 @@
                     <li><a href="about.html#story">Our Story</a></li>
                     <li><a href="about.html#values">Our Values</a></li>
                     <li><a href="about.html#solutions">Focus Areas</a></li>
-                    <li><a href="about.html#team">The Team</a></li>
+                    <li><a href="team.html">The Team</a></li>
                 </ul>
             </div>
 

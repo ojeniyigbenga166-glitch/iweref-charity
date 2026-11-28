@@ -44,7 +44,15 @@
             <nav class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item nav-dropdown">
+                        <a href="about.html" class="nav-link nav-dropdown-toggle" aria-expanded="false">Explore <span class="nav-chevron" aria-hidden="true">&#9662;</span></a>
+                        <ul class="nav-submenu">
+                            <li><a href="about.html" class="nav-submenu-link">About Us</a></li>
+                            <li><a href="team.html" class="nav-submenu-link">Team</a></li>
+                            <li><a href="donate.html#volunteer" class="nav-submenu-link">Volunteer</a></li>
+                            <li><a href="stories.html" class="nav-submenu-link">Events</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
                     <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="stories.html" class="nav-link">Stories</a></li>
@@ -85,6 +93,98 @@
                     <div class="hero-buttons">
                         <a href="projects.html" class="btn btn-primary btn-pill">Explore Projects <span class="icon-arrow">→</span></a>
                         <a href="donate.html" class="btn btn-outline btn-pill">Get Involved Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARTNERS SECTION -->
+        <section class="partners-section">
+            <div class="container">
+                <div class="partners-title-wrapper scroll-reveal fade-up">
+                    <span class="partners-label text-center">TRUSTED BY ORGANIZATIONS AROUND THE WORLD</span>
+                </div>
+                
+                <div class="partners-carousel scroll-reveal scale-in">
+                    <div class="partners-track">
+                        <!-- Partner 1 -->
+                        <div class="partner-logo">
+                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+                                <rect x="5" y="5" width="30" height="30" rx="6" opacity="0.3"/>
+                                <circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="3" fill="none"/>
+                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">ECO-GRID</text>
+                            </svg>
+                        </div>
+                        <!-- Partner 2 -->
+                        <div class="partner-logo">
+                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+                                <path d="M5 20 L20 5 L35 20 L20 35 Z" opacity="0.3"/>
+                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">WATERSHED</text>
+                            </svg>
+                        </div>
+                        <!-- Partner 3 -->
+                        <div class="partner-logo">
+                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+                                <circle cx="20" cy="20" r="15" opacity="0.3"/>
+                                <path d="M12 20h16M20 12v16" stroke="currentColor" stroke-width="2"/>
+                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">GREEN GOV</text>
+                            </svg>
+                        </div>
+                        <!-- Partner 4 -->
+                        <div class="partner-logo">
+                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+                                <path d="M10 10 h20 v20 h-20 z" opacity="0.3" fill="currentColor"/>
+                                <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">BIO-ALLIANCE</text>
+                            </svg>
+                        </div>
+                        <!-- Partner 5 -->
+                        <div class="partner-logo">
+                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+                                <circle cx="20" cy="20" r="12" fill="none" stroke="currentColor" stroke-dasharray="4 2"/>
+                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">EARTH-CARE</text>
+                            </svg>
+                        </div>
+
+                        <!-- Duplicate set for seamless infinite rotation -->
+                        <!-- Partner 1 -->
+                        <div class="partner-logo" aria-hidden="true">
+                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+                                <rect x="5" y="5" width="30" height="30" rx="6" opacity="0.3"/>
+                                <circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="3" fill="none"/>
+                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">ECO-GRID</text>
+                            </svg>
+                        </div>
+                        <!-- Partner 2 -->
+                        <div class="partner-logo" aria-hidden="true">
+                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+                                <path d="M5 20 L20 5 L35 20 L20 35 Z" opacity="0.3"/>
+                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">WATERSHED</text>
+                            </svg>
+                        </div>
+                        <!-- Partner 3 -->
+                        <div class="partner-logo" aria-hidden="true">
+                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+                                <circle cx="20" cy="20" r="15" opacity="0.3"/>
+                                <path d="M12 20h16M20 12v16" stroke="currentColor" stroke-width="2"/>
+                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">GREEN GOV</text>
+                            </svg>
+                        </div>
+                        <!-- Partner 4 -->
+                        <div class="partner-logo" aria-hidden="true">
+                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+                                <path d="M10 10 h20 v20 h-20 z" opacity="0.3" fill="currentColor"/>
+                                <circle cx="20" cy="20" r="8" fill="currentColor"/>
+                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">BIO-ALLIANCE</text>
+                            </svg>
+                        </div>
+                        <!-- Partner 5 -->
+                        <div class="partner-logo" aria-hidden="true">
+                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
+                                <circle cx="20" cy="20" r="12" fill="none" stroke="currentColor" stroke-dasharray="4 2"/>
+                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">EARTH-CARE</text>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -294,55 +394,55 @@
                     <span class="section-label">OUR CORE PROGRAMS</span>
                     <h2 class="section-title">Comprehensive Ecology & Resource Programs</h2>
                 </div>
-                                <div class="grid grid-4" style="gap: 24px;">
+                <div class="grid grid-4" style="gap: 24px;">
                     <!-- Prog 1 -->
-                    <div class="program-card scroll-reveal fade-up" style="--delay: 100ms; background: var(--color-white); border-radius: var(--border-radius-md); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid rgba(38, 198, 218, 0.15);">
-                        <div class="program-img-wrapper" style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/project-pump-installation.jpg" alt="Water, Sanitation & Hygiene (WASH) - Community Borehole Development" class="program-img" loading="lazy" style="height: 100%; width: 100%; object-fit: cover; object-position: center 30%;">
+                    <a href="programs.html" class="program-card scroll-reveal fade-up" style="--delay: 100ms;">
+                        <img src="assets/images/project-pump-installation.jpg" alt="Water, Sanitation & Hygiene (WASH) - Community Borehole Development" class="program-img" loading="lazy" style="object-position: center 30%;">
+                        <div class="program-overlay"></div>
+                        <div class="program-card-content">
+                            <span class="program-pill">WATER &amp; HYGIENE</span>
+                            <div class="program-card-bottom">
+                                <p class="program-desc">Providing reliable clean drinking water through solar-powered deep boreholes, storage systems, and community sanitation education.</p>
+                                <span class="program-cta">Explore WASH <span class="program-cta-arrow" aria-hidden="true">&rarr;</span></span>
+                            </div>
                         </div>
-                        <div class="program-body" style="padding: 20px;">
-                            <span class="section-label" style="font-size: 11px;">WASH</span>
-                            <h3 class="program-title" style="font-size: 18px; margin-bottom: 6px;">Water, Sanitation &amp; Hygiene</h3>
-                            <p style="font-size: 13px; font-weight: 600; color: var(--color-primary); margin-bottom: 8px;">Community Borehole Development</p>
-                            <p class="program-desc" style="font-size: 13px; color: var(--color-text-light); line-height: 1.5;">Providing reliable clean drinking water through solar-powered deep boreholes, storage systems, and community sanitation education.</p>
-                        </div>
-                    </div>
+                    </a>
                     <!-- Prog 2 -->
-                    <div class="program-card scroll-reveal fade-up" style="--delay: 200ms; background: var(--color-white); border-radius: var(--border-radius-md); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid rgba(38, 198, 218, 0.15);">
-                        <div class="program-img-wrapper" style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/project-tree-planting.jpg" alt="Environmental Conservation - Community Tree Planting Initiative" class="program-img" loading="lazy" style="height: 100%; width: 100%; object-fit: cover;">
+                    <a href="programs.html" class="program-card scroll-reveal fade-up" style="--delay: 200ms;">
+                        <img src="assets/images/project-tree-planting.jpg" alt="Environmental Conservation - Community Tree Planting Initiative" class="program-img" loading="lazy">
+                        <div class="program-overlay"></div>
+                        <div class="program-card-content">
+                            <span class="program-pill">CONSERVATION</span>
+                            <div class="program-card-bottom">
+                                <p class="program-desc">Restoring river corridors, combating land degradation, and planting indigenous tree species with local farmers and schools.</p>
+                                <span class="program-cta">Explore Conservation <span class="program-cta-arrow" aria-hidden="true">&rarr;</span></span>
+                            </div>
                         </div>
-                        <div class="program-body" style="padding: 20px;">
-                            <span class="section-label" style="font-size: 11px;">CONSERVATION</span>
-                            <h3 class="program-title" style="font-size: 18px; margin-bottom: 6px;">Environmental Conservation</h3>
-                            <p style="font-size: 13px; font-weight: 600; color: var(--color-primary); margin-bottom: 8px;">Community Tree Planting Initiative</p>
-                            <p class="program-desc" style="font-size: 13px; color: var(--color-text-light); line-height: 1.5;">Restoring river corridors, combating land degradation, and planting indigenous tree species with local farmers and schools.</p>
-                        </div>
-                    </div>
+                    </a>
                     <!-- Prog 3 -->
-                    <div class="program-card scroll-reveal fade-up" style="--delay: 300ms; background: var(--color-white); border-radius: var(--border-radius-md); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid rgba(38, 198, 218, 0.15);">
-                        <div class="program-img-wrapper" style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/project-agroforestry.jpg" alt="Climate Action - Climate Change Awareness & Resilience Program" class="program-img" loading="lazy" style="height: 100%; width: 100%; object-fit: cover;">
+                    <a href="programs.html" class="program-card scroll-reveal fade-up" style="--delay: 300ms;">
+                        <img src="assets/images/project-agroforestry.jpg" alt="Climate Action - Climate Change Awareness & Resilience Program" class="program-img" loading="lazy">
+                        <div class="program-overlay"></div>
+                        <div class="program-card-content">
+                            <span class="program-pill">CLIMATE ACTION</span>
+                            <div class="program-card-bottom">
+                                <p class="program-desc">Empowering communities with climate literacy, flood mitigation, rainwater harvesting, and renewable clean energy systems.</p>
+                                <span class="program-cta">Explore Climate Action <span class="program-cta-arrow" aria-hidden="true">&rarr;</span></span>
+                            </div>
                         </div>
-                        <div class="program-body" style="padding: 20px;">
-                            <span class="section-label" style="font-size: 11px;">CLIMATE ACTION</span>
-                            <h3 class="program-title" style="font-size: 18px; margin-bottom: 6px;">Climate Action</h3>
-                            <p style="font-size: 13px; font-weight: 600; color: var(--color-primary); margin-bottom: 8px;">Climate Change Awareness &amp; Resilience</p>
-                            <p class="program-desc" style="font-size: 13px; color: var(--color-text-light); line-height: 1.5;">Empowering communities with climate literacy, flood mitigation, rainwater harvesting, and renewable clean energy systems.</p>
-                        </div>
-                    </div>
+                    </a>
                     <!-- Prog 4 -->
-                    <div class="program-card scroll-reveal fade-up" style="--delay: 400ms; background: var(--color-white); border-radius: var(--border-radius-md); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid rgba(38, 198, 218, 0.15);">
-                        <div class="program-img-wrapper" style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/project-school-outreach.jpg" alt="Education & Capacity Building" class="program-img" loading="lazy" style="height: 100%; width: 100%; object-fit: cover; object-position: center top;">
+                    <a href="programs.html" class="program-card scroll-reveal fade-up" style="--delay: 400ms;">
+                        <img src="assets/images/project-school-outreach.jpg" alt="Education & Capacity Building" class="program-img" loading="lazy" style="object-position: center top;">
+                        <div class="program-overlay"></div>
+                        <div class="program-card-content">
+                            <span class="program-pill">CAPACITY BUILDING</span>
+                            <div class="program-card-bottom">
+                                <p class="program-desc">Delivering vocational infrastructure training, youth leadership eco-clubs, and empowering women in sustainable community governance.</p>
+                                <span class="program-cta">Explore Trainings <span class="program-cta-arrow" aria-hidden="true">&rarr;</span></span>
+                            </div>
                         </div>
-                        <div class="program-body" style="padding: 20px;">
-                            <span class="section-label" style="font-size: 11px;">CAPACITY BUILDING</span>
-                            <h3 class="program-title" style="font-size: 18px; margin-bottom: 6px;">Education &amp; Capacity Building</h3>
-                            <p style="font-size: 13px; font-weight: 600; color: var(--color-primary); margin-bottom: 8px;">Youth &amp; Community Empowerment</p>
-                            <p class="program-desc" style="font-size: 13px; color: var(--color-text-light); line-height: 1.5;">Delivering vocational infrastructure training, youth leadership eco-clubs, and empowering women in sustainable community governance.</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="text-center" style="margin-top: 40px;">
                     <a href="programs.html" class="btn btn-primary btn-pill">Explore Full Programs Portfolio →</a>
@@ -449,58 +549,6 @@
                 </div>
                 <div class="text-center" style="margin-top: 40px;">
                     <a href="stories.html" class="btn btn-outline btn-pill">View All Impact Stories →</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- PARTNERS SECTION -->
-        <section class="partners-section">
-            <div class="container">
-                <div class="partners-title-wrapper scroll-reveal fade-up">
-                    <span class="partners-label text-center">TRUSTED BY ORGANIZATIONS AROUND THE WORLD</span>
-                </div>
-                
-                <div class="partners-carousel scroll-reveal scale-in">
-                    <div class="partners-track">
-                        <!-- Partner 1 -->
-                        <div class="partner-logo">
-                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
-                                <rect x="5" y="5" width="30" height="30" rx="6" opacity="0.3"/>
-                                <circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="3" fill="none"/>
-                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">ECO-GRID</text>
-                            </svg>
-                        </div>
-                        <!-- Partner 2 -->
-                        <div class="partner-logo">
-                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
-                                <path d="M5 20 L20 5 L35 20 L20 35 Z" opacity="0.3"/>
-                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">WATERSHED</text>
-                            </svg>
-                        </div>
-                        <!-- Partner 3 -->
-                        <div class="partner-logo">
-                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
-                                <circle cx="20" cy="20" r="15" opacity="0.3"/>
-                                <path d="M12 20h16M20 12v16" stroke="currentColor" stroke-width="2"/>
-                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">GREEN GOV</text>
-                            </svg>
-                        </div>
-                        <!-- Partner 4 -->
-                        <div class="partner-logo">
-                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
-                                <path d="M10 10 h20 v20 h-20 z" opacity="0.3" fill="currentColor"/>
-                                <circle cx="20" cy="20" r="8" fill="currentColor"/>
-                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">BIO-ALLIANCE</text>
-                            </svg>
-                        </div>
-                        <!-- Partner 5 -->
-                        <div class="partner-logo">
-                            <svg width="120" height="40" viewBox="0 0 120 40" fill="currentColor">
-                                <circle cx="20" cy="20" r="12" fill="none" stroke="currentColor" stroke-dasharray="4 2"/>
-                                <text x="45" y="25" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14">EARTH-CARE</text>
-                            </svg>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -624,7 +672,7 @@
                 <ul class="footer-links">
                     <li><a href="about.html">Who We Are</a></li>
                     <li><a href="about.html#values">Our Values</a></li>
-                    <li><a href="about.html#team">Our Team</a></li>
+                    <li><a href="team.html">Our Team</a></li>
                     <li><a href="about.html#solutions">Focus Areas</a></li>
                 </ul>
             </div>
